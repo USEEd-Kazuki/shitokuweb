@@ -2,25 +2,905 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-size: 62.5%;
+  font-family: 'eb-garamond',serif, 'fot-tsukuaoldmin-pr6n',sans-serif;
+  font-style: normal;
+  font-weight: 300, 400;
+  background-color: rgb(248, 245, 240);
 }
 
-a {
-  color: inherit;
+html.wf-active {
+  visibility: visible;
+}
+
+/* Header */
+
+.Header{
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  display: flex;
+  position: absolute;
+  z-index: 998;
+}
+
+.headerNav{
+  text-align: left;
+  position: absolute;
+  top: 8%;
+  z-index: 998;
+  left: 50%;
+  white-space: nowrap;
+}
+
+.navLink{
+  list-style: none;
+  display: inline-block;
+  font-size: 3.2rem;
+  text-align: center;
+  margin-right: 30%;
+}
+
+.headerTitle{
+  font-size: 4.8rem;
+  padding: 0%;
+  color: white;
+  letter-spacing: 1.5rem;
+}
+
+.navLinkWord{
   text-decoration: none;
+  color: white;
 }
 
-* {
-  box-sizing: border-box;
+.mobileButton{
+  color: white;
+  margin: 0 0 0 auto;
+  z-index: 999;
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+header{
+  position: fixed;
+  background-color: transparent;
+  width: 100%;
+}
+
+.headerWrapper{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 90%;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.subHeader{
+  color: black;
+}
+
+/* Hero */
+.heroContainer{
+  height: 100vh;
+  width: 100%;
+  position: relative;
+}
+
+.HeroMovie{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+.movieContent{
+  padding: 0%;
+  margin: 0%;
+  height: 100vh;
+}
+
+.scroll{
+  color: white;
+  font-size: 2.4rem;
+}
+
+.shintokuLogo{
+  margin-bottom: 10%;
+}
+
+.heroTitle{
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  text-align: center;
+  display: block;
+  align-items: center;
+  top: 25%;
+}
+
+.mobileMenuContenr{
+  position: relative;
+}
+
+
+/* footer */
+footer{
+  width: 100%;
+  height: 100vh;
+  margin: 0%;
+  padding: 0;
+  background-color: black;
+  margin-top: 20%;
+}
+
+.fooetrContainer{
+  margin: 0 auto;
+  width: 100%;
+  max-width: 80%;
+}
+
+.footerContent{
+  display: flex;
+  padding-top: 10%;
+}
+
+.footerTitle{
+  color: white;
+  font-size: 6.4rem;
+  writing-mode: vertical-rl;
+  text-align: center;
+  letter-spacing: 5.0rem;
+  cursor: pointer;
+}
+
+.footerShintokuDetail{
+  color: white;
+  font-size: 3.2rem;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.footerTel{
+  margin-bottom: 15%;
+}
+
+.footerMail{
+  margin-bottom: 15%;
+}
+
+.footerLinkDetail{
+  border-left:1px solid white;
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.footerLink{
+  cursor: pointer ;
+  list-style: none;
+  margin-top: 50%;
+}
+
+.footerLinkWord{
+  text-decoration: none;
+  color: white;
+}
+
+/* aboutHero */
+.aboutHeroTitle{
+  position: absolute;
+  display: flex;
+  color: white;
+  left: 20%;
+  top: 20%;
+  white-space: nowrap;
+}
+
+
+.aboutSubHeroMainTitle{
+  font-size: 1.8rem;
+  margin-top: 0%;
+}
+
+/* home */
+
+.homeTitleContainer{
+  width: 100%;
+  height: 100%;
+}
+
+.homeTitleContent{
+  width: 100%;
+  max-width: 80%;
+  background-color: transparent;
+  margin: 0 auto;
+  position: relative;
+}
+
+.homeMainTitle1{
+  margin-top: 20%;
+  font-size: 3.2rem;
+}
+
+.homeMainTitle2{
+  margin-top: 5%;
+  font-size: 3.2rem;
+}
+
+.homeMainTitle3{
+  margin-top: 5%;
+  font-size: 3.2rem;
+}
+
+.homeMainTitle4{
+  margin-top: 10%;
+}
+
+.homeMovieContent{
+  padding: 0%;
+  margin-top: 20%;
+  height: 100vh;
+}
+
+.wave1{
+  position: absolute;
+  left: 5%;
+  margin-top: -4%;
+  float: left;
+}
+
+.homeAboutTitleContainer{
+  width: 100%;
+  background-color: rgb(4, 27, 43);
+  margin-top: 20%;
+}
+
+.homeAboutTitleContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.homeAboutTitle{
+  font-size: 4.8rem;
+  color: white;
+  padding-top: 10%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+
+.homeAboutMapContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.homeAboutMapTitle{
+  position: absolute;
+  font-size: 1rem;
+  margin-top: 10%;
+  z-index: 900;
+}
+
+.homeAboutTitle2{
+  margin-top: 10%;
+}
+
+.homeAboutTitle3{
+  margin-top: 10%;
+}
+
+.homeServiceContainer{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(4, 27, 43);
+  margin-top: 30%;
+  position: relative;
+}
+
+.homeServiceContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.homePhoto1{
+  margin-top: -20%;
+  float: left;
+  margin-bottom: 20%;
+}
+
+.homeServiceTitle{
+  text-align: end;
+  font-size: 4.8rem;
+  color: white;
+  margin-bottom: 0%;
+}
+
+.homeServiceSubTitle{
+  margin-top: 0%;
+  text-align: start;
+}
+
+.homeServiceSubTitle1{
+  margin-top: 5%;
+  font-size: 3.2rem;
+}
+
+.homeServiceSubTitle2{
+  margin-top: 5%;
+  font-size: 3.2rem;
+}
+
+.homeServiceSubTitle3{
+  margin-top: 5%;
+  font-size: 3.2rem;
+}
+
+.homeServiceDetail{
+  text-align: start;
+  margin-top: 10%;
+}
+
+.homeServiceDetail1{
+  font-size: 1.8rem;
+}
+
+.homeServiceDetail2{
+  margin-top: 5%;
+  font-size: 1.8rem;
+}
+
+.moreSection{
+  margin-top: 5%;
+  padding-bottom: 10%;
+}
+
+.viewMore{
+  font-size: 1.6rem;
+}
+
+.homeRecruitContainer{
+  background-color: rgb(0, 71, 167);
+  margin-top: 20%;
+}
+
+.homeRecruitContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  color: white;
+}
+
+.homeRectuitTitleContent{
+  color: white;
+  padding-top: 10%;
+  margin-top: 0%;
+}
+
+.homeRecruitTitle{
+  font-size: 4.8rem;
+  margin-bottom: 0%;
+}
+
+.homeServiceSubTitle1{
+  font-size: 3.2rem;
+}
+
+.homeServiceSubTitle2{
+  font-size: 3.2rem;
+}
+
+.homeServiceSubTitle3{
+  font-size: 3.2rem;
+}
+
+
+/* about */
+
+.aboutMoiveContaner{
+  position: relative;
+  margin-top: -20%;
+  width: 100%;
+}
+
+.aboutContainer{
+  margin-top: 0%;
+  padding-top: 10%;
+}
+
+.aboutContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.aboutDetailTitle{
+  font-size: 4.8rem;
+  padding-top: 20%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+}
+
+.aboutDeatilName{
+  margin-bottom: 5%;
+  border-bottom:1px solid rgb(112, 112, 112);
+}
+
+.aboutDeatilName1{
+  font-size: 3.2rem;
+}
+
+.aboutDeatilName2{
+  font-size: 1.8rem;
+}
+
+.aboutDeatilName3{
+  font-size: 1.8rem;
+}
+
+.aboutCompanyAdress{
+  text-align: end;
+  font-size: 2.4rem;
+  padding-top: 5%;
+  margin-top: 20%;
+  margin-bottom: 0%;
+}
+
+.aboutCompanyMapMainTitle{
+  font-size: 4.8rem;
+  margin-bottom: 0%;
+}
+.aboutMap2{
+  text-align: center;
+}
+
+.wave4{
+  text-align: center;
+}
+
+.aboutCompanyMemberMap{
+  text-align: center;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+.aboutCompanyMapTitle{
+  font-size: 1.8rem;
+  border-bottom: 1px solid rgb(112, 112, 112);
+  margin-bottom: 1%;
+}
+
+.aboutCompanyMapName{
+  font-size: 1.6rem;
+  margin-top: 5%;
+}
+
+.aboutCompanyMap1{
+  margin-top: 10%;
+}
+.aboutCompanyMap2{
+  margin-top: 10%;
+}
+.aboutCompanyMap3{
+  margin-top: 10%;
+}
+.aboutCompanyMap4{
+  margin-top: 10%;
+}
+.aboutCompanyMap5{
+  margin-top: 10%;
+}
+
+.aboutInfoTitle{
+  font-size: 4.8rem;
+  padding-top: 10%;
+  margin-top: 0%;
+}
+
+.aboutShintokuInfoSubTitle{
+  font-size: 1.6rem;
+}
+
+.aboutShintokuInfoSubWord{
+  font-size: 1.8rem;
+}
+
+.aboutShintokuInfoSubWord1{
+  margin-top: 5%;
+}
+
+.aboutShintokuInfoSubWord2{
+  margin-top: 5%;
+}
+
+.aboutShintokuInfoSubWord3{
+  margin-top: 5%;
+}
+
+.aboutShintokuInfoSubWord5{
+  margin-top: 5%;
+}
+
+.aboutInfoPhoto{
+  width: 100%;
+  height: 100%;
+  margin-top: 20%;
+}
+
+.aboutShintokuCompanyTitleContent{
+  margin-top: 20%;
+  text-align: end;
+}
+.aboutShintokuCompanyTitle{
+  font-size: 4.8rem;
+}
+
+/* service */
+
+.serviceStoryContaner{
+  width: 100%;
+  background-color: rgb(4, 27, 43);
+  margin-top: 20%;
+}
+
+.serviceStoryContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.serviceStoryTitle{
+  font-size: 4.8rem;
+  color: white;
+  padding-top: 10%;
+  margin-bottom: 0%;
+}
+
+.serviceHistoryContainer{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(4, 27, 43);
+  padding-bottom: 10%;
+}
+
+.serviceHistoryContent{
+  width: 100%;
+  max-width: 80%;
+  text-align: center;
+  margin: 0 auto;
+  position: relative;
+  background-color: rgb(4, 27, 43);
+}
+
+.serviceHistory{
+  color: white;
+  display: flex;
+  position: absolute;
+  z-index: 10;
+}
+
+.serviceHistoryA{
+  margin-right: 10%;
+}
+
+.serviceHistoryHead{
+  text-align: left;
+  border-bottom:1px solid white;
+  font-size: 3.2rem;
+}
+
+.serviceHistoryBody{
+  text-align: left;
+  padding-left: 10%;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  padding-top: 10%;
+}
+
+.serviceHistoryHeadEmpty{
+  text-align: left;
+  font-size: 3.2rem;
+  visibility: hidden;
+}
+
+.serviceHistoryBodyEmpty{
+  text-align: left;
+  padding-left: 10%;
+  font-size: 1.8rem;
+  white-space: nowrap;
+  visibility: hidden;
+}
+
+.serviceShintokuContainer{
+  margin-top: 20%;
+}
+
+.serviceShintokuContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.serviceShintokuTitleContent{
+  text-align: end;
+}
+
+.serviceShintokuTitle{
+  font-size: 4.8rem;
+}
+
+.serviceShintokuSubTitle{
+  margin-top: 10%;
+  font-size: 3.2rem;
+}
+
+.serviceShintokuSubWord1{
+  font-size: 1.8rem;
+  margin-top: 5%;
+}
+
+.serviceShintokuSubWord2{
+  font-size: 1.8rem;
+  margin-top: 5%;
+}
+
+.serviceHelloTitleContent{
+  margin-top: 20%;
+  text-align: end;
+}
+
+.serviceHelloTitle{
+  font-size: 4.8rem;
+  width: 100%;
+  height: 100%;
+}
+
+.serviceShintokuHelloTitle{
+  font-size: 4.8rem;
+  margin-top: 10%;
+  text-align: start;
+}
+
+.serviceShintokuHelloSubWord1{
+  font-size: 1.8rem;
+  margin-top: 5%;
+  text-align: start;
+}
+
+.serviceShintokuHelloSubWord2{
+  font-size: 1.8rem;
+  margin-top: 5%;
+  text-align: start;
+}
+
+.serviceShintokuHelloSubTitle{
+  font-size: 3.2rem;
+  margin-top: 10%;
+  text-align: start;
+  border-bottom: 1px solid black;
+  width: 100%;
+  max-width: 40%;
+}
+
+.serviceSdgsContainer{
+  text-align: center;
+}
+
+.serviceSdgsSubTitle1{
+  font-size: 4.8rem;
+}
+
+.serviceSdgsSubTitle2{
+  font-size: 3.2rem;
+}
+
+.serviceSdgsSubTitle3{
+  font-size: 1.6rem;
+  margin-top: 5%;
+}
+
+.serviceSdgsDetailPhoto{
+  display: flex;
+}
+
+.serviceSdgsDetailTitle{
+  font-size: 4.8rem;
+  margin-top: 20%;
+  border-bottom: 1px solid black;
+}
+
+.serviceSdgsDetailPhoto{
+  margin-top: 5%;
+}
+
+.serviceSdgsDetailWord{
+  text-align: start;
+  margin-top: 5%;
+}
+
+.serviceSdgsDetailWord1{
+  font-size: 1.4rem;
+}
+
+.serviceSdgsDetailWord2{
+  font-size: 1.8rem;
+  margin-top: 5%;
+}
+
+.serviceSdgsDetailWord3{
+  font-size: 1.4rem;
+  margin-top: 5%;
+}
+
+.serviceSdgsDetailWord4{
+  font-size: 1.4rem;
+}
+
+.serviceSdgsMainTitlePhoto{
+  margin-top: 10%;
+}
+
+.serviceAboutSdgs{
+  text-align: start;
+}
+
+.serviceAboutSdgsTitle1{
+  font-size: 3.2rem;
+  border-bottom: 1px solid black;
+  width: 100%;
+  max-width: 30%;
+  margin-top: 10%;
+}
+
+.serviceAboutSdgsDetail2{
+  font-size: 1.8rem;
+  margin-top: 5%;
+}
+
+.serviceAboutSdgsDetail3{
+  font-size: 1.8rem;
+  margin-top: 5%;
+}
+
+/* recruit */
+
+.recruitContainer{
+  width: 100%;
+}
+
+.recruitTitleContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 20%;
+}
+
+.recruitTitle{
+  font-size: 4.8rem;
+}
+
+.recruitSubTitleContent{
+  margin-top: 10%;
+}
+
+.recruitSubTitle1{
+  margin-top: 10%;
+  font-size: 3.2rem;
+}
+
+.recruitSubTitle2{
+  margin-top: 5%;
+  font-size: 3.2rem;
+}
+
+.recruitWord1{
+  margin-top: 10%;
+  font-size: 1.8rem;
+}
+
+.recruitWord2{
+  margin-top: 5%;
+  font-size: 1.8rem;
+}
+
+.recruitWord3{
+  margin-top: 5%;
+  font-size: 1.8rem;
+}
+
+.recruitWord4{
+  margin-top: 5%;
+  font-size: 1.8rem;
+}
+
+.recruitPhoto{
+  margin-top: 20%;
+}
+
+.recruitDeatilall{
+  display: flex;
+}
+
+.recruitDetailTitle{
+  font-size: 4.8rem;
+}
+
+.recruitDetailSubTitle1{
+  font-size: 3.2rem;
+  margin-bottom: 0%;
+}
+
+.recruitDetailSubTitle{
+  border-bottom:1px solid rgb(112, 112, 112) ;
+}
+
+.recruitdeatilSubWord1{
+  font-size: 1.8rem;
+}
+
+.recruitdeatilSubWord2{
+  font-size: 1.8rem;
+}
+
+.recruitdeatilSubWord3{
+  font-size: 1.8rem;
+}
+
+.recruitDeatilWrapper{
+  margin-bottom: 20%;
+}
+
+.recruitDetailSub1{
+  margin-right: 20%;
+}
+
+.recruitDetailContent{
+  margin-top: 20%;
+}
+
+/* media(Hero) */
+@media (max-width:990px){
+  .headerNav{
+    display: none;
   }
-  body {
-    color: white;
-    background: black;
+  .aboutMoiveContaner{
+    margin-top: -80%;
+  }
+}
+
+/* media(Footer) */
+@media (max-width:1200px){
+  .footerContent{
+    display: block;
+  }
+  .footerTitle{
+    writing-mode:initial;
+  }
+  .footerLinkDetail{
+    border-left:none;
+    border-top:1px solid white;
+    margin-top: 5%;
+  }
+  .footerLink{
+    margin-top: 10%;
+  }
+}
+
+
+/* media(FontSize) */
+@media only screen and (max-width: 1200px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media only screen and (max-width: 796px) {
+  html {
+    font-size: 53%;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 53%;
   }
 }
