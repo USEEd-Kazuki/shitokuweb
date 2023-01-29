@@ -213,22 +213,22 @@ const RecruitSection = () => {
             >
             <SwiperSlide>
               <div >
-            <Image src={'/RecruitSlide1.jpg'} alt={'SlideShip1'} width={1360} height={854}></Image>
+            <Image src={'/RecruitSlide1.JPG'} alt={'SlideShip1'} width={1360} height={854}></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-            <Image src={'/RecruitSlide2.jpg'} alt={'SlideShip1'} width={1360} height={854}></Image>
+            <Image src={'/RecruitSlide2.JPG'} alt={'SlideShip1'} width={1360} height={854}></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-            <Image src={'/RecruitSlide3.jpg'} alt={'SlideShip1'} width={1360} height={854}></Image>
+            <Image src={'/RecruitSlide3.JPG'} alt={'SlideShip1'} width={1360} height={854}></Image>
               </div>
             </SwiperSlide>
             <SwiperSlide>
               <div>
-            <Image src={'/RecruitSlide4.jpg'} alt={'SlideShip1'} width={1360} height={854}></Image>
+            <Image src={'/RecruitSlide4.JPG'} alt={'SlideShip1'} width={1360} height={854}></Image>
               </div>
             </SwiperSlide>
             </Swiper>

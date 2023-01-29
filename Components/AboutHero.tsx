@@ -192,7 +192,7 @@ const AboutHero = () => {
             <SwiperSlide>
               <div className='mobileSlideShip'>
               <div className="heroSlideShip1">
-            <Image src={'/SlideShip2.jpg'} alt={'SlideShip1'}  width={1360} height={854}></Image>
+            <Image src={'/SlideShip2.JPG'} alt={'SlideShip1'}  width={1360} height={854}></Image>
               </div>
               <div className="mobileShip1">
             <Image src={'/mobileSlideShip2.jpg'} alt={'mobileSlideShip'} width={360} height={896} className='mobileShip1'></Image>
@@ -202,7 +202,7 @@ const AboutHero = () => {
             <SwiperSlide>
               <div className='mobileSlideShip'>
               <div className="heroSlideShip1">
-            <Image src={'/SlideShip3.jpg'} alt={'SlideShip1'}  width={1360} height={854}></Image>
+            <Image src={'/SlideShip3.JPG'} alt={'SlideShip1'}  width={1360} height={854}></Image>
               </div>
             <div className="mobileShip1">
             <Image src={'/mobileSlideShip3.jpg'} alt={'mobileSlideShip'} width={360} height={896} className='mobileShip1'></Image>
@@ -212,7 +212,7 @@ const AboutHero = () => {
             <SwiperSlide>
               <div className='mobileSlideShip'>
               <div className="heroSlideShip1">
-            <Image src={'/SlideShip4.jpg'} alt={'SlideShip1'}  width={1360} height={854}></Image>
+            <Image src={'/SlideShip4.JPG'} alt={'SlideShip1'}  width={1360} height={854}></Image>
               </div>
             <div className="mobileShip1">
             <Image src={'/mobileSlideShip4.jpg'} alt={'mobileSlideShip'} width={360} height={896} className='mobileShip1'></Image>
