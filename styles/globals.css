@@ -11,79 +11,173 @@ body {
 
 html.wf-active {
   visibility: visible;
+  color: white;
 }
 
 /* Header */
 
-.Header{
-  height: 100%;
+nav{
+  display: none;
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+}
+
+nav.active{
   width: 100%;
-  background-color: transparent;
   display: flex;
   position: absolute;
   z-index: 998;
+  position: fixed;
+  background-color:rgba(22,22,22,0.9);
+  animation-name: fadeUpAnime;
+  animation-duration: 0.5s;
+} 
+
+@keyframes fadeUpAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-20%);
+  }
+
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
 }
 
 .headerNav{
-  text-align: left;
-  position: absolute;
-  top: 8%;
   z-index: 998;
-  left: 50%;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  margin-left: 10rem;
+  width: 100%;
 }
 
 .navLink{
   list-style: none;
   display: inline-block;
-  font-size: 3.2rem;
-  text-align: center;
-  margin-right: 30%;
+  font-size: 2.4rem;
+  text-align: left;
+  margin-right: 8rem;
 }
 
 .headerTitle{
-  font-size: 4.8rem;
-  padding: 0%;
+  font-size: 3.2rem;
   color: white;
   letter-spacing: 1.5rem;
+  cursor: pointer;
+  padding-right: 20rem;
 }
+
 
 .navLinkWord{
   text-decoration: none;
   color: white;
+  position: relative;
+  padding-bottom: 1.5rem; 
 }
 
-.mobileButton{
-  color: white;
-  margin: 0 0 0 auto;
-  z-index: 999;
+.navLinkWord::before{
+  background: rgb(248, 245, 240);
+  content: '';
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  transform-origin: right top;
+  transform: scale(0, 1);
+  transition: transform .3s;
+}
+
+.navLinkWord:hover::before {
+  transform-origin: left top;
+  transform: scale(1, 1);
+}
+
+.mobileContent{
   display: none;
-}
-
-header{
-  position: fixed;
-  background-color: transparent;
-  width: 100%;
-}
-
-.headerWrapper{
-  margin: 0 auto;
-  width: 100%;
-  max-width: 90%;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
 }
 
 .subHeader{
   color: black;
 }
 
+.SubheaderTitle{
+  font-size: 4.8rem;
+  color: black;
+  letter-spacing: 1.5rem;
+  cursor: pointer;
+  padding-right: 20rem;
+}
+
+.SubNavLinkWord{
+  text-decoration: none;
+  color: black;
+}
+
+
+
 /* Hero */
 .heroContainer{
   height: 100vh;
   width: 100%;
   position: relative;
+  overflow: hidden;
+}
+
+.heroCloudContent{
+  position: absolute;
+  color: white;
+  left: 10rem;
+}
+
+.heroCloudTitle{
+  font-size: 6.2rem;
+  position: absolute;
+  top: 10rem;
+  left: 10rem;
+  letter-spacing: 2rem;
+  z-index: 25;
+  white-space: nowrap;
+}
+
+.heroCloud{
+  margin-top: 5rem;
+  z-index: 20;
+  position: relative
+}
+
+.heroShip{
+  position: absolute;
+  left: 20rem;
+  top: 60rem;
+  z-index: 15;
+}
+
+.verticalLine{
+  border: solid 1px rgb(248, 245, 240, 0.9);
+  z-index: 15;
+}
+
+.heroMessageContent{
+  position: absolute;
+  color: white;
+  display: flex;
+  top: 30rem;
+  left: 20rem;
+  font-size: 1.4rem;
+  z-index: 15;
+}
+
+.heroMessageEn{
+  padding-right: 2rem;
+}
+
+.heroMessageJp{
+  padding-left: 2rem;
 }
 
 .HeroMovie{
@@ -98,15 +192,6 @@ header{
   height: 100vh;
 }
 
-.scroll{
-  color: white;
-  font-size: 2.4rem;
-}
-
-.shintokuLogo{
-  margin-bottom: 10%;
-}
-
 .heroTitle{
   width: 100%;
   height: 100vh;
@@ -117,7 +202,52 @@ header{
   top: 25%;
 }
 
-.mobileMenuContenr{
+.overlay{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+}
+
+.overlayTitle{
+  color: white;
+  font-size: 6.2rem;
+  z-index: 15;
+  left: 10%;
+}
+
+.sliderContent{
+  position: absolute;
+  color: white;
+  width: 100%;
+  text-align: center;
+  top: 10rem;
+}
+
+.RecruitSliderContent{
+  width: 100%;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.Suboverlay{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+  z-index: 10;
+  object-fit: cover;
+}
+
+.scrollContent{
+  position: absolute;
+  z-index: 20;
+  right: 15%;
+  bottom: 10%;
+  
+}
+
+.HeroMainContnt{
   position: relative;
 }
 
@@ -125,12 +255,14 @@ header{
 /* footer */
 footer{
   width: 100%;
-  height: 100vh;
+  height: 60vh;
   margin: 0%;
   padding: 0;
   background-color: black;
   margin-top: 20%;
+  overflow: hidden;
 }
+
 
 .fooetrContainer{
   margin: 0 auto;
@@ -138,62 +270,90 @@ footer{
   max-width: 80%;
 }
 
-.footerContent{
+.footerTitleContent{
+  letter-spacing: 1.5rem;
+  margin-top: 5rem;
+  font-size: 2.4rem;
   display: flex;
-  padding-top: 10%;
+  border-bottom: 1px solid white;
+}
+
+.footerSubTitle{
+  color: white;
+  letter-spacing: 0rem;
+}
+
+.footerShintokuDetail{
+  display: flex;
+  color: white;
+  margin-top: 5rem;
 }
 
 .footerTitle{
   color: white;
-  font-size: 6.4rem;
-  writing-mode: vertical-rl;
-  text-align: center;
-  letter-spacing: 5.0rem;
-  cursor: pointer;
-}
-
-.footerShintokuDetail{
-  color: white;
-  font-size: 3.2rem;
-  margin-left: 10%;
-  margin-right: 10%;
-}
-
-.footerTel{
-  margin-bottom: 15%;
 }
 
 .footerMail{
-  margin-bottom: 15%;
+  margin-right: 10rem;
 }
 
-.footerLinkDetail{
-  border-left:1px solid white;
-  font-size: 3.2rem;
-  text-align: center;
+.footerTelTitle{
+  font-size: 2.4rem;
 }
 
-.footerLink{
-  cursor: pointer ;
-  list-style: none;
-  margin-top: 50%;
+.footerTel{
+  margin-right: 10rem;
 }
 
-.footerLinkWord{
-  text-decoration: none;
+.footerTelNumber{
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.footerMailTitle{
+  font-size: 2.4rem;
+}
+
+.footerMailNumber{
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.footerAddressTitle{
+  font-size: 2.4rem;
+}
+
+.footerAddressPostNumber{
+  margin-top: 2rem;
+  font-size: 1.8rem;
+}
+
+.footerAddress{
+  font-size: 1.8rem;
+}
+
+.copyContent{
+  margin-top: 5rem;
+  position: relative;
+  width: 100%;
+}
+
+.shintokuCopy{
+  position: absolute;
   color: white;
+  right: 10rem;
+  font-size: 1.2rem;
 }
 
 /* aboutHero */
 .aboutHeroTitle{
   position: absolute;
   display: flex;
-  color: white;
+  color: black;
   left: 20%;
   top: 20%;
   white-space: nowrap;
 }
-
 
 .aboutSubHeroMainTitle{
   font-size: 1.8rem;
@@ -216,18 +376,18 @@ footer{
 }
 
 .homeMainTitle1{
-  margin-top: 20%;
-  font-size: 3.2rem;
+  margin-top: 15rem;
+  font-size: 2.4rem;
 }
 
 .homeMainTitle2{
   margin-top: 5%;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .homeMainTitle3{
   margin-top: 5%;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .homeMainTitle4{
@@ -236,8 +396,8 @@ footer{
 
 .homeMovieContent{
   padding: 0%;
-  margin-top: 20%;
   height: 100vh;
+  margin-top: 10rem;
 }
 
 .wave1{
@@ -245,6 +405,7 @@ footer{
   left: 5%;
   margin-top: -4%;
   float: left;
+  z-index: 1;
 }
 
 .homeAboutTitleContainer{
@@ -260,7 +421,7 @@ footer{
 }
 
 .homeAboutTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   color: white;
   padding-top: 10%;
   margin-top: 0%;
@@ -276,17 +437,19 @@ footer{
 
 .homeAboutMapTitle{
   position: absolute;
-  font-size: 1rem;
   margin-top: 10%;
   z-index: 900;
 }
-
-.homeAboutTitle2{
-  margin-top: 10%;
+.homeAboutTitle1{
+  font-size: 1.8rem;
 }
-
+.homeAboutTitle2{
+  margin-top: 5rem;
+  font-size: 1.8rem;
+}
 .homeAboutTitle3{
-  margin-top: 10%;
+  margin-top: 5rem;
+  font-size: 1.8rem;
 }
 
 .homeServiceContainer{
@@ -306,14 +469,15 @@ footer{
 .homePhoto1{
   margin-top: -20%;
   float: left;
-  margin-bottom: 20%;
+  margin-bottom: 10%;
 }
 
 .homeServiceTitle{
   text-align: end;
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   color: white;
   margin-bottom: 0%;
+  padding-top: 30%;
 }
 
 .homeServiceSubTitle{
@@ -322,17 +486,16 @@ footer{
 }
 
 .homeServiceSubTitle1{
-  margin-top: 5%;
   font-size: 3.2rem;
 }
 
 .homeServiceSubTitle2{
-  margin-top: 5%;
+  margin-top: 1rem;
   font-size: 3.2rem;
 }
 
 .homeServiceSubTitle3{
-  margin-top: 5%;
+  margin-top: 1rem;
   font-size: 3.2rem;
 }
 
@@ -350,13 +513,11 @@ footer{
   font-size: 1.8rem;
 }
 
-.moreSection{
-  margin-top: 5%;
-  padding-bottom: 10%;
-}
-
 .viewMore{
   font-size: 1.6rem;
+  margin: 0%;
+  padding: 0%;
+  cursor: pointer;
 }
 
 .homeRecruitContainer{
@@ -378,29 +539,82 @@ footer{
 }
 
 .homeRecruitTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   margin-bottom: 0%;
 }
 
 .homeServiceSubTitle1{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .homeServiceSubTitle2{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .homeServiceSubTitle3{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
+.map1{
+  text-align: center;
+}
+
+.homeWaveContentTitle{
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  position: relative;
+  color: white;
+  height: 100%;
+  width: 100%;
+  max-width: 70%;
+  margin: 0 auto;
+  top: 20%;
+}
+
+.WaveContentTitle1{
+  font-size: 1.8rem;  
+  margin-right: 8rem;
+}
+.WaveContentTitle2{
+  font-size: 1.8rem;
+  margin-right: 8rem;
+}
+
+.subWaveContentTitle{
+  color: white;
+  font-size: 1.2rem;
+  left: 10%;
+  margin-top: 10rem;
+}
+
+.subWaveContentTitle2{
+  margin-top: 5rem;
+}
+
+.viewMoreContent{
+  display: flex;
+  justify-content:flex-start;
+  margin-top: 10rem;
+}
+
+.arrow{
+  vertical-align: middle;
+}
+
+
+/* Heromobile */
+.mobileShip1{
+  display: none;
+  max-width: 100%;
+}
 
 /* about */
 
 .aboutMoiveContaner{
   position: relative;
-  margin-top: -20%;
+  margin-top: -30rem;
   width: 100%;
+  height: 100vh;
 }
 
 .aboutContainer{
@@ -414,7 +628,7 @@ footer{
   margin: 0 auto;
 }
 .aboutDetailTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   padding-top: 20%;
   margin-top: 0%;
   margin-bottom: 0%;
@@ -422,11 +636,15 @@ footer{
 
 .aboutDeatilName{
   margin-bottom: 5%;
+  margin-top: 15rem;
+}
+
+.aboutBorderDetail{
   border-bottom:1px solid rgb(112, 112, 112);
 }
 
 .aboutDeatilName1{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .aboutDeatilName2{
@@ -445,8 +663,12 @@ footer{
   margin-bottom: 0%;
 }
 
+.aboutCompanyAdressTitle{
+  font-size: 3.2rem;
+}
+
 .aboutCompanyMapMainTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   margin-bottom: 0%;
 }
 .aboutMap2{
@@ -464,34 +686,40 @@ footer{
 }
 
 .aboutCompanyMapTitle{
-  font-size: 1.8rem;
-  border-bottom: 1px solid rgb(112, 112, 112);
+  font-size: 1.6rem;
   margin-bottom: 1%;
 }
 
+.aboutCompanyLine{
+  border-bottom: 1px solid rgb(112, 112, 112);
+}
+
 .aboutCompanyMapName{
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-top: 5%;
 }
 
 .aboutCompanyMap1{
-  margin-top: 10%;
+  margin-top: 20rem;
 }
 .aboutCompanyMap2{
-  margin-top: 10%;
+  margin-top: 20rem;
 }
 .aboutCompanyMap3{
-  margin-top: 10%;
+  margin-top: 20rem;
 }
 .aboutCompanyMap4{
-  margin-top: 10%;
+  margin-top: 20rem;
 }
 .aboutCompanyMap5{
-  margin-top: 10%;
+  margin-top: 20rem;
+}
+.aboutCompanyMap6{
+  margin-top: 20rem;
 }
 
 .aboutInfoTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   padding-top: 10%;
   margin-top: 0%;
 }
@@ -501,7 +729,7 @@ footer{
 }
 
 .aboutShintokuInfoSubWord{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
 }
 
 .aboutShintokuInfoSubWord1{
@@ -531,15 +759,47 @@ footer{
   text-align: end;
 }
 .aboutShintokuCompanyTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
 }
+
+.aboutMap2DetailName{
+  font-size: 1.8rem;
+}
+
+.aboutMap2DetailName1{
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.aboutMap2DetailName2{
+  font-size: 1.6rem;
+}
+
+.aboutMap2DetailName3{
+  font-size: 1.6rem;
+}
+
+
+.aboutMa2Deatilcontent{
+  margin-bottom: 20rem;
+  display:flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50rem;
+}
+
+.aboutMap2Detail{
+  text-align: left;
+  border-bottom: 1px solid rgba(22,22,22,0.9); ;
+}
+
 
 /* service */
 
 .serviceStoryContaner{
   width: 100%;
   background-color: rgb(4, 27, 43);
-  margin-top: 20%;
 }
 
 .serviceStoryContent{
@@ -549,7 +809,7 @@ footer{
 }
 
 .serviceStoryTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   color: white;
   padding-top: 10%;
   margin-bottom: 0%;
@@ -564,7 +824,6 @@ footer{
 
 .serviceHistoryContent{
   width: 100%;
-  max-width: 80%;
   text-align: center;
   margin: 0 auto;
   position: relative;
@@ -576,6 +835,9 @@ footer{
   display: flex;
   position: absolute;
   z-index: 10;
+  width: 100%;
+  max-width: 90%;
+  left: 10%;  
 }
 
 .serviceHistoryA{
@@ -585,33 +847,34 @@ footer{
 .serviceHistoryHead{
   text-align: left;
   border-bottom:1px solid white;
-  font-size: 3.2rem;
+  width: 100%;
+  font-size: 2.4rem;
 }
+
 
 .serviceHistoryBody{
   text-align: left;
-  padding-left: 10%;
-  font-size: 1.8rem;
-  white-space: nowrap;
-  padding-top: 10%;
+  font-size: 1.6rem;
+  padding-top: 5rem;
 }
 
 .serviceHistoryHeadEmpty{
   text-align: left;
-  font-size: 3.2rem;
+  font-size: 1.8rem;
   visibility: hidden;
+  padding-top: 10rem;
 }
 
 .serviceHistoryBodyEmpty{
   text-align: left;
   padding-left: 10%;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   white-space: nowrap;
   visibility: hidden;
 }
 
 .serviceShintokuContainer{
-  margin-top: 20%;
+  margin-top: 20rem;
 }
 
 .serviceShintokuContent{
@@ -625,21 +888,21 @@ footer{
 }
 
 .serviceShintokuTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
 }
 
 .serviceShintokuSubTitle{
   margin-top: 10%;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .serviceShintokuSubWord1{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 5%;
 }
 
 .serviceShintokuSubWord2{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 5%;
 }
 
@@ -649,34 +912,33 @@ footer{
 }
 
 .serviceHelloTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
   width: 100%;
   height: 100%;
 }
 
 .serviceShintokuHelloTitle{
-  font-size: 4.8rem;
+  font-size: 2.4rem;
   margin-top: 10%;
   text-align: start;
 }
 
 .serviceShintokuHelloSubWord1{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 5%;
   text-align: start;
 }
 
 .serviceShintokuHelloSubWord2{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-top: 5%;
   text-align: start;
 }
 
 .serviceShintokuHelloSubTitle{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   margin-top: 10%;
   text-align: start;
-  border-bottom: 1px solid black;
   width: 100%;
   max-width: 40%;
 }
@@ -705,6 +967,9 @@ footer{
 .serviceSdgsDetailTitle{
   font-size: 4.8rem;
   margin-top: 20%;
+}
+
+.sdgsBorder{
   border-bottom: 1px solid black;
 }
 
@@ -745,10 +1010,13 @@ footer{
 
 .serviceAboutSdgsTitle1{
   font-size: 3.2rem;
-  border-bottom: 1px solid black;
   width: 100%;
   max-width: 30%;
   margin-top: 10%;
+}
+
+.serviceWhy{
+  border-bottom: 1px solid black;
 }
 
 .serviceAboutSdgsDetail2{
@@ -759,6 +1027,19 @@ footer{
 .serviceAboutSdgsDetail3{
   font-size: 1.8rem;
   margin-top: 5%;
+}
+
+.serviceHelloPohoto{
+  text-align: center;
+}
+
+
+
+/* SDGS */
+.sdgsContent{
+  width: 100%;
+  max-width: 80%;
+  margin: 0 auto;
 }
 
 /* recruit */
@@ -775,7 +1056,7 @@ footer{
 }
 
 .recruitTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
 }
 
 .recruitSubTitleContent{
@@ -784,12 +1065,12 @@ footer{
 
 .recruitSubTitle1{
   margin-top: 10%;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .recruitSubTitle2{
   margin-top: 5%;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
 }
 
 .recruitWord1{
@@ -821,15 +1102,15 @@ footer{
 }
 
 .recruitDetailTitle{
-  font-size: 4.8rem;
+  font-size: 3.2rem;
 }
 
 .recruitDetailSubTitle1{
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   margin-bottom: 0%;
 }
 
-.recruitDetailSubTitle{
+.recruitBoder{
   border-bottom:1px solid rgb(112, 112, 112) ;
 }
 
@@ -857,31 +1138,477 @@ footer{
   margin-top: 20%;
 }
 
-/* media(Hero) */
-@media (max-width:990px){
+.recruitVideo{
+  position: relative;
+}
+
+.recruitMovie{
+  height: 100vh;
+  margin-top: 20rem;
+  width: 100%;
+}
+
+.applyContent{
+  margin-top: 10rem;
+}
+
+.applyTitle{
+  font-size: 3.2rem;
+}
+
+.LoadingContent{
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.sendouMovie{
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+}
+
+.applyDeatil{
+  font-size: 1.6rem;
+}
+
+.applyDeatil1{
+  font-size: 1.6rem;
+}
+
+.applyDeatil2{
+  font-size: 1.6rem;
+}
+
+.applyDeatil3{
+  font-size: 1.6rem;
+}
+
+.applyDeatil4{
+  font-size: 1.6rem;
+}
+
+.applyDeatil5{
+  font-size: 1.6rem;
+}
+
+.applyDeatil6{
+  font-size: 1.6rem;
+}
+
+.applyDeatil7{
+  font-size: 1.6rem;
+}
+
+
+.applyTitle1{
+  font-size: 3.2rem;
+  margin-top: 10rem;
+}
+
+.AboutheroMessageEn1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.AboutheroMessageJp1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.ServiceheroMessageEn1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.ServiceheroMessageJp1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.SDGsheroMessageEn1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.SDGsheroMessageJp1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.RecruitheroMessageEn1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+.RecruitheroMessageJp1{
+  font-size: 3.2rem;
+  margin-right: 5rem;
+  margin-left: 5rem;
+}
+
+
+@-webkit-keyframes rotating {
+from {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+to {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+}
+
+@keyframes rotating {
+from {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+to {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+}
+
+
+/* media(Header) */
+@media (max-width:1100px){
   .headerNav{
+    display: flex;
+    flex-flow: column;
+    margin: 0;
+  }
+  .headerTitle{
+    padding: 0;
+  }
+  .navLinks{
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width:500px){
+  .navLinkWord{
+    font-size: 1.4rem;
+  }
+  .headerTitle{
+    font-size: 1.6rem;
+  }
+  .navLinkWord{
+    padding-bottom: 1rem;
+  }
+}
+
+/* media(Hero) */
+@media screen and (min-width: 2000px) {
+  
+}
+@media (max-width:1500px){
+  .scrollContent{
     display: none;
   }
-  .aboutMoiveContaner{
-    margin-top: -80%;
+}
+@media (max-width:1100px){
+  .navLinkWord{
+    font-size: 1.4rem;
+  }
+  .headerTitle{
+    font-size: 1.6rem;
+  }
+  .heroCloud{
+    width: 50%;
+    height: 50%;
+  }
+  .heroCloudTitle{
+    top: 30%;
+    left: 10%;
+  }
+  .heroMessageContent{
+    top: 30rem;
+    left: 10%;
+    display: block;
+  }
+  .heroSlideShip1{
+    display: none;
+  }
+  .mobileShip1{
+    display: block;
+  }
+  .heroMessageJp{
+    padding-left: 0%;
+    padding-top: 5rem;
+    margin-left: 0;
+  }
+  .heroMessageEn{
+    padding-left: 0%;
+    margin-left: 0;
+    margin-bottom: 5rem;
+  }
+  .heroShip{
+    left: 0rem;
+    top: 60rem;
+  }
+}
+@media (max-width:500px) {
+  .heroMessageContent{
+    top: 40rem;
+    left: 10%;
+    display: block;
+  }
+  .heroShip{
+    left: 0rem;
+    top: 100rem;
+  }
+}
+@media (orientation: landscape) and (max-width: 900px) {
+  .heroSlideShip1{
+    display: block;
+  }
+  .mobileShip1{
+    display: none;
+  }
+  .heroMessageContent{
+    display: flex;
+  }
+   .heroMessageJp{
+    padding-left: 0%;
+    padding-top: 0;
+    margin-left: 5rem;
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .heroMessageEn{
+    font-size: 1rem;
+    margin-top: 2rem;
+  }
+  .heroCloudTitle{
+    top: 30%;
+    left: 10%;
+    font-size: 4rem;
+  }
+  .sliderContent{
+    top: 0rem;
+  }
+  .heroMessageContent{
+    top: 20rem;
+  }
+}
+
+/* media(homeSection) */
+@media (max-width:1100px){
+  .homeTitleContent{
+    max-width: 90%;
+  }
+  .homeAboutTitleContent{
+    max-width: 90%;
+  }
+  .homeAboutMapContent{
+    max-width: 90%;
+  }
+  .wave1{
+    width: 80%;
+  }
+  .subWaveContentTitle{
+    margin-top: 60rem;
+  }
+  .homeWaveContentTitle{
+    -ms-writing-mode: initial;
+    writing-mode: initial;
+    max-width: initial;
+    display: initial;
+    top: 50rem;
+    margin: 0;
+    overflow: hidden;
+  }
+  .WaveContentTitle1{
+    margin-right: 0;
+  }
+  .WaveContentTitle2{
+    margin-right: 0;
+  }
+  .map1{
+    width: 80rem;
+    height: 80rem;
+    position: relative;
+    margin:  0 auto;
+  }
+  .homeAboutMapTitle{
+    position: relative;
+  }
+  .WaveContentTitle1{
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  .WaveContentTitle2{
+    margin-right: 0;
+    margin-left: 5%;
+  }
+  .homeServiceContent{
+    max-width: 90%;
+  }
+  .homeRecruitContent{
+    max-width: 90%;
+  }
+}
+
+@media (max-width:500px){
+  .map1{
+    width: 50rem;
+    height: 50rem;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .wave1Image{
+    display: none;
+  }
+  .overlayTitle{
+    display: none;
+  }
+  .subWaveContentTitle{
+    margin-top: 10rem;
+    white-space: nowrap;
+    z-index: 1000;
+  }
+  .homeWaveContentTitle{
+    top: 25rem;
+  }
+}
+
+
+
+/* medeia(aboutsevtion) */
+@media (max-width:500px){
+  .aboutMa2Deatilcontent{
+    margin-left: 0;
+  }
+  .AboutheroMessageEn1{
+    margin-left: 0rem;
+  }
+  .AboutheroMessageJp1{
+    margin-left: 0rem;
+  }
+}
+
+/* media(servicesection) */
+@media (max-width:500px){
+  .verticalWave1{
+  display: none;
+  }
+  .serviceHistory{
+    position: relative;
+    left: 5%;
+  }
+  .aboutContent{
+    max-width: 90%;
+  }
+  .serviceStoryContent{
+    max-width: 90%;
+  }
+  .serviceShintokuContent{
+    max-width: 90%;
+  }
+  .ServiceheroMessageEn1{
+    margin-left: 0;
+  }
+  .ServiceheroMessageJp1{
+   margin-left: 0;
+  }
+}
+
+/* SDGS */
+.sdgsContent{
+  max-width: 90%;
+}
+
+/* recruit */
+.recruitTitleContent{
+  max-width: 90%;
+}
+
+@media (max-width:500px){
+  .RecruitheroMessageEn1{
+    margin-left: 0;
+  }
+  .RecruitheroMessageJp1{
+    margin-left: 0;
   }
 }
 
 /* media(Footer) */
-@media (max-width:1200px){
-  .footerContent{
-    display: block;
+@media (max-width:1100px){
+  .footerShintokuDetail{
+    display: flex;
+    flex-flow: column;
+  }
+  .footerMail{
+    margin-top: 2rem;
+  }
+  .footerAddress{
+    margin-top: 2rem;
+  }
+  .shintokuCopy{
+    top: 30rem;
+  }
+}
+
+@media (max-width:500px){
+  .SDGsheroMessageEn1{
+    margin-left: 0;
+  }
+  .SDGsheroMessageJp1{
+    margin-left: 0;
+  }
+}
+
+@media (orientation: landscape) and (max-width: 900px) {
+  .footerShintokuDetail{
+    display: flex;
+    flex-flow: row;
   }
   .footerTitle{
-    writing-mode:initial;
+    font-size: 1.8rem;
   }
-  .footerLinkDetail{
-    border-left:none;
-    border-top:1px solid white;
-    margin-top: 5%;
+  .footerSubTitle{
+    font-size: 1.8rem;
   }
-  .footerLink{
-    margin-top: 10%;
+  .footerMail{
+    margin-top: 0rem;
+  }
+  .footerAddress{
+    margin-top: 0rem;
+  }
+  .footer{
+    margin-top: 0%;
+  }
+  .footerTelTitle{
+    font-size: 1.8rem;
+  }
+  .footerTelNumber{
+    white-space: nowrap;
+  }
+  .footerTel{
+    margin-right: 2rem;
+  }
+  .footerMailTitle{
+    font-size: 1.8rem;
+  }
+  .footerMail{
+    margin-right: 2rem;
+  }
+  .footerAddressTitle{
+    font-size: 1.8rem;
   }
 }
 
@@ -895,12 +1622,12 @@ footer{
 
 @media only screen and (max-width: 796px) {
   html {
-    font-size: 53%;
+    font-size: 30%;
   }
 }
 
 @media only screen and (max-width: 320px) {
   html {
-    font-size: 53%;
+    font-size: 20%;
   }
 }

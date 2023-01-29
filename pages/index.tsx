@@ -4,6 +4,7 @@ import Hero from '../Components/Hero'
 import HomeSection from '../Components/HomeSection'
 
 const Home: NextPage = () => {
+
   return (
   <>
   <Head>

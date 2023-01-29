@@ -1,74 +1,68 @@
-import { useEffect, useState } from 'react';
+import {FC, useState, useEffect } from 'react';
 import Link from 'next/link';
-import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
-import Navlinks from './Navlinks';
 
+const Header: FC = (props) => {
 
+    const [navbar, setNav] = useState(false)
 
-const Header = () => {
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [nav, setNav] = useState(false)
+    useEffect(() =>{
+        const handleScroll = () =>{
+            if (window.scrollY >= 800){
+                setNav(true);
+            }else{
+                setNav(false)
+            }
+        };
 
-  const handleNav = () => {
-      setNav(!nav);
-  };
+        window.addEventListener("scroll", handleScroll)
 
-  useEffect(() =>{
-      const handleScroll = () =>{
-          if (window.scrollY > 0){
-              setIsScrolled(true)
-          } else {
-              setIsScrolled(false)
-          }
-      }
-      window.addEventListener("scroll", handleScroll)
-      return () => {
-          window.removeEventListener("scroll", handleScroll)
-      }
-  },[])
-  
+        return () => {
+            window.removeEventListener("scroll", handleScroll)
+        };
+    },[])
+
   return (
     <>
-    <div className='Header'>
+    <nav className={navbar ? 'navbar active' : 'navbar'}>
     <div className='headerNav'>
+        <Link href='/' scroll={false}>
+        <h1 className='headerTitle'>進徳海運</h1>
+        </Link>
+
+        <div className="navLinks">
        <ul >
         <li className='navLink'>
-        <Link href='/about'>
+        <Link href='/about' scroll={false}>
             <a className='navLinkWord'>
                 会社概要
             </a>
             </Link>
         </li>
         <li className='navLink'>
-        <Link href='/service' >
+        <Link href='/service' scroll={false}>
         <a className='navLinkWord'>
                 サービス
             </a>
         </Link>
         </li>
         <li className='navLink' >
-        <Link href='/recruit'>
+        <Link href='/sdgs'scroll={false}>
+            <a className='navLinkWord'>
+                SDGsについて
+            </a>
+        </Link>
+        </li>
+        <li className='navLink' >
+        <Link href='/recruit' scroll={false}>
             <a className='navLinkWord'>
                 採用
             </a>
         </Link>
         </li>
         </ul>
-    </div>
-
-    <header className='`${isScrolled}`'>
-        <div className="headerWrapper">
-        <Link href='/'>
-        <h1 className='headerTitle'>進徳海運</h1>
-        </Link>
-    {/*Mobile Button*/}
-        <div onClick={handleNav} className='mobileButton'>
-          {nav ? <AiOutlineClose size={40} /> : <AiOutlineMenu size={40} />}
-          {nav && <Navlinks />}
         </div>
-        </div>
-    </header>
     </div>
+    </nav>
 </>
   )
 }
