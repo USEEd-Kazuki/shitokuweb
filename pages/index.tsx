@@ -8,7 +8,7 @@ const Home: NextPage = () => {
   return (
   <>
   <Head>
-    <title>Shintoku Kaiun Co., Ltd.</title>
+    <title>進徳海運　株式会社</title>
     <link rel="icon" href="/faviocon.ico" />
   </Head>
   <div className='homeMainbody'>
