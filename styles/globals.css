@@ -1467,10 +1467,13 @@ to {
 
 @media (max-width:500px){
   .homeWaveContentTitle{
-    top: 10rem;
+    top: 30rem;
   }
   .subWaveContentTitle{
-    margin-top: 10rem;
+    margin-top: 35rem;
+  }
+  .subWaveContentTitle2{
+    margin-top: 0rem;
   }
 }
 
