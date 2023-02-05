@@ -501,7 +501,7 @@ footer{
 
 .homeServiceDetail{
   text-align: start;
-  margin-top: 10%;
+  margin-top: 5%;
 }
 
 .homeServiceDetail1{
@@ -568,15 +568,15 @@ footer{
   width: 100%;
   max-width: 70%;
   margin: 0 auto;
-  top: 20%;
+  top: 10%;
 }
 
 .WaveContentTitle1{
-  font-size: 1.8rem;  
+  font-size: 1.6rem;  
   margin-right: 8rem;
 }
 .WaveContentTitle2{
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   margin-right: 8rem;
 }
 
@@ -1412,20 +1412,7 @@ to {
 }
 
 /* media(homeSection) */
-@media (max-width:1300px){
-  .homeServiceDetail{
-    text-align: start;
-    margin-top: 5%;
-  }
-  
-  .homeServiceDetail1{
-    font-size: 1.2rem;
-  }
-  
-  .homeServiceDetail2{
-    font-size: 1.2rem;
-  }
-}
+
 @media (max-width:1100px){
   .homeTitleContent{
     max-width: 90%;
