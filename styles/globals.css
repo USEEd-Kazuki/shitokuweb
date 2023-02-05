@@ -1360,7 +1360,7 @@ to {
   }
   .heroShip{
     left: 0rem;
-    top: 30rem;
+    top: 60rem;
   }
 }
 @media (max-width:680px) {
@@ -1371,7 +1371,7 @@ to {
   }
   .heroShip{
     left: 0rem;
-    top: 100rem;
+    top: 50rem;
   }
 }
 @media (orientation: landscape) and (max-width: 900px) {
