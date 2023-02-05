@@ -1350,22 +1350,22 @@ to {
   }
   .heroMessageJp{
     padding-left: 0%;
-    padding-top: 5rem;
+    padding-top: 2rem;
     margin-left: 0;
   }
   .heroMessageEn{
     padding-left: 0%;
     margin-left: 0;
-    margin-bottom: 5rem;
+    margin-bottom: 2rem;
   }
   .heroShip{
     left: 0rem;
-    top: 60rem;
+    top: 30rem;
   }
 }
 @media (max-width:680px) {
   .heroMessageContent{
-    top: 40rem;
+    top: 20rem;
     left: 10%;
     display: block;
   }
