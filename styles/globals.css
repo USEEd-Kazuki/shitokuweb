@@ -1298,12 +1298,15 @@ to {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:680px){
   .navLinkWord{
     font-size: 1.4rem;
   }
   .headerTitle{
     font-size: 1.6rem;
+  }
+  .navLink{
+    margin-right: 4rem;
   }
   .navLinkWord{
     padding-bottom: 1rem;
@@ -1360,7 +1363,7 @@ to {
     top: 60rem;
   }
 }
-@media (max-width:500px) {
+@media (max-width:680px) {
   .heroMessageContent{
     top: 40rem;
     left: 10%;
@@ -1462,7 +1465,7 @@ to {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:680px){
   .map1{
     width: 50rem;
     height: 50rem;
@@ -1489,7 +1492,7 @@ to {
 
 
 /* medeia(aboutsevtion) */
-@media (max-width:500px){
+@media (max-width:680px){
   .aboutMa2Deatilcontent{
     margin-left: 0;
   }
@@ -1502,7 +1505,7 @@ to {
 }
 
 /* media(servicesection) */
-@media (max-width:500px){
+@media (max-width:680px){
   .verticalWave1{
   display: none;
   }
@@ -1528,20 +1531,20 @@ to {
 }
 
 /* SDGS */
-@media(max-width:500px){
+@media(max-width:680px){
   .sdgsContent{
     max-width: 90%;
   }
 }
 
 /* recruit */
-@media (max-width:500px){
+@media (max-width:680px){
   .recruitTitleContent{
     max-width: 90%;
   }
 }
 
-@media (max-width:500px){
+@media (max-width:680px){
   .RecruitheroMessageEn1{
     margin-left: 0;
   }
@@ -1567,7 +1570,7 @@ to {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:680px){
   .SDGsheroMessageEn1{
     margin-left: 0;
   }
