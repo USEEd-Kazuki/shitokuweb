@@ -1360,7 +1360,7 @@ to {
   }
   .heroShip{
     left: 0rem;
-    top: 60rem;
+    top: 30rem;
   }
 }
 @media (max-width:680px) {
@@ -1462,6 +1462,19 @@ to {
   }
   .homeRecruitContent{
     max-width: 90%;
+  }
+  .homeServiceDetail{
+    text-align: start;
+    margin-top: 5%;
+  }
+  
+  .homeServiceDetail1{
+    font-size: 1.4rem;
+  }
+  
+  .homeServiceDetail2{
+    margin-top: 2%;
+    font-size: 1.4rem;
   }
 }
 
