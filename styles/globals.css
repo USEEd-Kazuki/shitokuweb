@@ -1476,10 +1476,10 @@ to {
     margin-top: 0rem;
   }
   .homeAboutTitle2{
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
   .homeAboutTitle3{
-    margin-top: 0rem;
+    margin-top: 2rem;
   }
 }
 
@@ -1589,6 +1589,9 @@ to {
 }
 
 @media (max-width:680px){
+  footer{
+    height: 100vh;
+  }
   .SDGsheroMessageEn1{
     margin-left: 0;
   }
