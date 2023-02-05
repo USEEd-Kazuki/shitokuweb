@@ -1481,14 +1481,16 @@ to {
   .homeAboutTitle3{
     margin-top: 2rem;
   }
-}
-
-@media (max-width:680px){
   .map1{
     width: 30rem;
     height: 30rem;
   }
+  .viewMoreContent{
+    margin-top: 10rem;
+  }
 }
+
+
 
 @media (orientation: landscape) and (max-width: 900px) {
   .wave1Image{
@@ -1506,8 +1508,6 @@ to {
     top: 25rem;
   }
 }
-
-
 
 /* medeia(aboutsevtion) */
 @media (max-width:680px){
