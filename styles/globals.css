@@ -1528,13 +1528,17 @@ to {
 }
 
 /* SDGS */
-.sdgsContent{
-  max-width: 90%;
+@media(max-width:500px){
+  .sdgsContent{
+    max-width: 90%;
+  }
 }
 
 /* recruit */
-.recruitTitleContent{
-  max-width: 90%;
+@media (max-width:500px){
+  .recruitTitleContent{
+    max-width: 90%;
+  }
 }
 
 @media (max-width:500px){
