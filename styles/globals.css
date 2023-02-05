@@ -1465,6 +1465,15 @@ to {
   }
 }
 
+@media (max-width:500px){
+  .homeWaveContentTitle{
+    top: 10rem;
+  }
+  .subWaveContentTitle{
+    margin-top: 10rem;
+  }
+}
+
 @media (max-width:680px){
   .map1{
     width: 50rem;
