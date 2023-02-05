@@ -1303,7 +1303,7 @@ to {
     font-size: 1.4rem;
   }
   .headerTitle{
-    font-size: 1.6rem;
+    font-size: 1.8rem;
   }
   .navLink{
     margin-right: 4rem;
@@ -1465,7 +1465,7 @@ to {
   }
 }
 
-@media (max-width:500px){
+@media (max-width:660px){
   .homeWaveContentTitle{
     top: 30rem;
   }
@@ -1473,6 +1473,12 @@ to {
     margin-top: 35rem;
   }
   .subWaveContentTitle2{
+    margin-top: 0rem;
+  }
+  .homeAboutTitle2{
+    margin-top: 0rem;
+  }
+  .homeAboutTitle3{
     margin-top: 0rem;
   }
 }

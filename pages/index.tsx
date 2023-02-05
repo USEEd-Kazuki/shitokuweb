@@ -10,6 +10,7 @@ const Home: NextPage = () => {
   <Head>
     <title>進徳海運　株式会社</title>
     <link rel="icon" href="/faviocon.ico" />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover' />
   </Head>
   <div className='homeMainbody'>
     <Hero />
