@@ -1321,6 +1321,9 @@ to {
   .scrollContent{
     display: none;
   }
+  .heroShip{
+    top: 40rem;
+  }
 }
 @media (max-width:1100px){
   .navLinkWord{
@@ -1409,6 +1412,21 @@ to {
 }
 
 /* media(homeSection) */
+@media (max-width:1300px){
+  .homeServiceDetail{
+    text-align: start;
+    margin-top: 5%;
+  }
+  
+  .homeServiceDetail1{
+    font-size: 1.4rem;
+  }
+  
+  .homeServiceDetail2{
+    margin-top: 2%;
+    font-size: 1.4rem;
+  }
+}
 @media (max-width:1100px){
   .homeTitleContent{
     max-width: 90%;
@@ -1463,19 +1481,7 @@ to {
   .homeRecruitContent{
     max-width: 90%;
   }
-  .homeServiceDetail{
-    text-align: start;
-    margin-top: 5%;
-  }
-  
-  .homeServiceDetail1{
-    font-size: 1.4rem;
-  }
-  
-  .homeServiceDetail2{
-    margin-top: 2%;
-    font-size: 1.4rem;
-  }
+
 }
 
 @media (max-width:660px){
