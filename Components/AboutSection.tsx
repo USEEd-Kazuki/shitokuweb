@@ -187,7 +187,7 @@ const AboutSection = () => {
                                                                                initial="offscreen" // 初期表示はoffscreen
                                                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'>広島県東広島市 西条町御薗宇６２００−１</motion.p>
+                        className='aboutDeatilName3'>広島県東広島市 西条町御薗宇6200番地1</motion.p>
                         <motion.p 
                                                                             variants={{
                                                                                 offscreen: { // 画面外の場合のスタイル

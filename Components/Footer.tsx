@@ -22,7 +22,7 @@ const Footer = () => {
           <div className="footerAddress">
             <div className="footerAddressTitle">ADDRESS : </div>
             <div className="footerAddressPostNumber">〒739-0024</div>
-            <div className="footerAddress">広島県東広島市 西条町御薗宇６２００−１</div>
+            <div className="footerAddress">広島県東広島市 西条町御薗宇6200番地1</div>
           </div>
         </div>
         </div>
