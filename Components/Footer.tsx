@@ -17,7 +17,7 @@ const Footer = () => {
           </div>
           <div className="footerMail">
             <div className="footerMailTitle">Mail : </div>
-            <div className="footerMailNumber">shintoku_biz@shintokukk.co.jp</div>
+            <div className="footerMailNumber">toiawase@shintokukk.co.jp</div>
           </div>
           <div className="footerAddress">
             <div className="footerAddressTitle">ADDRESS : </div>

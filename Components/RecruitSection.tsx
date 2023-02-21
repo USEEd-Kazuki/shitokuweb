@@ -1082,7 +1082,7 @@ const RecruitSection = () => {
                         <div className='applyDeatil4'>進徳海運　株式会社</div>
                         <div className='applyDeatil5'>住所 : 〒739-0024 広島県東広島市 西条町御薗宇6200番地1</div>
                         <div className='applyDeatil6'>TEL : 082-423-1958</div>
-                        <div className='applyDeatil7'>Mail : shintoku_biz@shintokukk.co.jp</div>
+                        <div className='applyDeatil7'>Mail : toiawase@shintokukk.co.jp</div>
                     </motion.div>
                 </div>
             </div>
