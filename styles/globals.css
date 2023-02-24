@@ -1300,22 +1300,21 @@ to {
 
 @media (max-width:680px){
   .navLinkWord{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .headerTitle{
     font-size: 1.8rem;
   }
   .navLink{
-    margin-right: 4rem;
+    margin-right: 8rem;
   }
   .navLinkWord{
-    padding-bottom: 1rem;
+    padding-bottom: 5rem;
   }
 }
 
 /* media(Hero) */
 @media screen and (min-width: 2000px) {
-  
 }
 @media (max-width:1500px){
   .scrollContent{
