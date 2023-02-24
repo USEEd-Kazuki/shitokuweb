@@ -75,7 +75,7 @@ nav.active{
   text-decoration: none;
   color: white;
   position: relative;
-  padding-bottom: 1.5rem; 
+  padding-bottom: 2rem; 
 }
 
 .navLinkWord::before{
@@ -1309,7 +1309,7 @@ to {
     margin-right: 6rem;
   }
   .navLinkWord{
-    padding-bottom: 1rem;
+    padding-bottom: 0.1rem;
   }
 }
 
