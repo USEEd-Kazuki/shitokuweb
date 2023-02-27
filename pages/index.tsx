@@ -8,9 +8,8 @@ const Home: NextPage = () => {
   return (
   <>
   <Head>
-    <title>進徳海運　株式会社</title>
+    <title>進徳海運株式会社</title>
     <link rel="icon" href="/faviocon.ico" />
-    
     <meta name="google-site-verification" content="PgfRjyZftxIn0m4VL5mAmQJngXhFNyExy3mzlhU9nww" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover' />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
