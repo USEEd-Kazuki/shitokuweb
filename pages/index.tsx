@@ -10,7 +10,7 @@ const Home: NextPage = () => {
   <Head>
     <title>進徳海運　株式会社</title>
     <link rel="icon" href="/faviocon.ico" />
-    <meta name="google-site-verification" content="ZWC1eM5FFY78g2KSFsokFkc6zIKlq02G1hD4YShjSjo" />
+    <meta name="google-site-verification" content="PgfRjyZftxIn0m4VL5mAmQJngXhFNyExy3mzlhU9nww" />
     <meta name='viewport' content='width=device-width, initial-scale=1.0, viewport-fit=cover' />
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="description" content="船舶貸渡業、東広島に拠点を置く進徳海運株式会社（SHINTOKU KAIUN CO., LTD.）のホームページ。会社情報、採用情報、サービスを掲載" />
