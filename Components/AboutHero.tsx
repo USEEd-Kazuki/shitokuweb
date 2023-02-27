@@ -253,7 +253,7 @@ const AboutHero = () => {
             {/*Video */}
             <div className='movieContent'
             >
-                <video className='HeroMovie' src="/Herowave.mp4"  playsInline autoPlay loop muted />
+                <video className='HeroMovie' src="/herowave.mp4"  playsInline autoPlay loop muted />
             </div>
         </div>
     </section>
