@@ -1057,6 +1057,7 @@ const RecruitSection = () => {
                     </div>
                     </div>
                 </div>
+                
                 <div className="applyContent">
                     <motion.div className='apply'
                                                                             variants={{
