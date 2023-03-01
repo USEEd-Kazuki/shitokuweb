@@ -26,7 +26,7 @@ const Header: FC = (props) => {
     <nav className={navbar ? 'navbar active' : 'navbar'}>
     <div className='headerNav'>
         <Link href='/' scroll={false}>
-        <h1 className='headerTitle'>進徳海運</h1>
+        <h1 className='headerTitle'>進徳海運株式会社</h1>
         </Link>
 
         <div className="navLinks">
