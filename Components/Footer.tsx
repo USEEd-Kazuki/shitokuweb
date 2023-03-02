@@ -1,6 +1,16 @@
 import React from 'react';
 
 const Footer = () => {
+  function SafeEmailLink() {
+    const user = "toiawase"; 
+    const domain = "shintokukk.co.jp"; 
+    const mailto = "mailto:" + user + "@" + domain; 
+  
+    return (
+      <a className='MailNumber' href={mailto}>{user}@{domain}</a>
+    );
+  }
+  
   return (
     <>
     <footer>
@@ -17,7 +27,7 @@ const Footer = () => {
           </div>
           <div className="footerMail">
             <div className="footerMailTitle">Mail : </div>
-            <div className="footerMailNumber">toiawase@shintokukk.co.jp</div>
+            <div className="footerMailNumber"><SafeEmailLink/></div>
           </div>
           <div className="footerAddress">
             <div className="footerAddressTitle">ADDRESS : </div>

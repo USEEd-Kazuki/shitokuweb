@@ -3,6 +3,17 @@ import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const AboutSection = () => {
+
+    function SafeEmailLink() {
+        const user = "toiawase"; 
+        const domain = "shintokukk.co.jp"; 
+        const mailto = "mailto:" + user + "@" + domain; 
+      
+        return (
+          <a className='blackMailNumber' href={mailto}>{user}@{domain}</a>
+        );
+      }
+
     const svgVariants  = {
         start: {
           opacity: 0,
@@ -429,7 +440,7 @@ const AboutSection = () => {
                                                                                initial="offscreen" // 初期表示はoffscreen
                                                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'>toiawase@shintokukk.co.jp</motion.p>
+                        className='aboutDeatilName3'><SafeEmailLink/></motion.p>
                         <motion.p 
                                                                             variants={{
                                                                                 offscreen: { // 画面外の場合のスタイル
