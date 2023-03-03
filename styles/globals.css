@@ -323,12 +323,14 @@ footer{
   text-decoration: none;
   list-style: none;
   color: white;
+  pointer-events: none;
 }
 
 .blackMailNumber{
   text-decoration: none;
   list-style: none;
   color: black;
+  pointer-events: none;
 }
 
 .footerAddressTitle{
