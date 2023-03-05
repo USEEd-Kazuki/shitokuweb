@@ -5,6 +5,7 @@ import Header from '../Components/Header';
 import { motion, AnimatePresence } from 'framer-motion';
 import React, {useState, useEffect} from 'react';
 import Loading from '../Components/Loading';
+import Head from 'next/head';
 
 
 function MyApp({ Component, pageProps, router }: AppProps) {
@@ -19,6 +20,10 @@ function MyApp({ Component, pageProps, router }: AppProps) {
 
   return (
   <>
+  <Head>
+    <title>進徳海運株式会社</title>
+    <meta property="og:title" content="進徳海運株式会社" key="title" />
+  </Head>
   {
     loading ?
     <Loading 
