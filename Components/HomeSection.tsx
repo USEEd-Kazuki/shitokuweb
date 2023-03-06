@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 const HomeSection = () => {
 
@@ -23,6 +24,10 @@ const HomeSection = () => {
 
   return (
     <>
+    <Head>
+    <title>進徳海運株式会社</title>
+            <meta property="og:title" content="進徳海運株式会社" key="title" />
+    </Head>
     <div className="homeContainer">
             {/* homeTitleSection */}
         <div className="homeTitleContainer">

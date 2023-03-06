@@ -1,5 +1,6 @@
 import {FC, useState, useEffect } from 'react';
 import Link from 'next/link';
+import Head from 'next/head';
 
 const Header: FC = (props) => {
 
@@ -23,6 +24,10 @@ const Header: FC = (props) => {
 
   return (
     <>
+              <Head>
+            <title>進徳海運株式会社</title>
+            <meta property="og:title" content="進徳海運株式会社" key="title" />
+      </Head>
     <nav className={navbar ? 'navbar active' : 'navbar'}>
     <div className='headerNav'>
         <Link href='/' scroll={false}>

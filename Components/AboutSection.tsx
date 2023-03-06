@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
+import Head from 'next/head';
 
 const AboutSection = () => {
 
@@ -31,6 +32,10 @@ const AboutSection = () => {
       };
   return (
    <>
+             <Head>
+            <title>進徳海運株式会社</title>
+            <meta property="og:title" content="進徳海運株式会社" key="title" />
+      </Head>
    <div className="aboutContainer">
         <div className="aboutContent">
                 <div className="aboutDeatilTitle">
