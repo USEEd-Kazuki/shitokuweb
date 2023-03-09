@@ -14,7 +14,7 @@ const Loading = () => {
     <meta name="keywords" content="進徳海運,Shintoku、船舶,船主,シップオーナー,船舶貸渡業,ship, owner, 広島, japan, finance, chemical"></meta>
     </Head>
     <div className="LoadingContent">
-    <video className='sendouMovie' src="/sendou.mp4"  playsInline autoPlay muted />
+    <video className='sendouMovie' src="/sendou.mp4" poster='/sendou.jpg'  playsInline autoPlay muted />
     </div>
     </>
   )
