@@ -1314,13 +1314,13 @@ to {
 
 @media (max-width:680px){
   .navLinkWord{
-    font-size: 1.6rem;
-  }
-  .headerTitle{
     font-size: 1.8rem;
   }
+  .headerTitle{
+    font-size: 2rem;
+  }
   .navLink{
-    margin-right: 6rem;
+    margin-right: 8rem;
   }
   .navLinkWord{
     padding-bottom: 0.1rem;
