@@ -9,6 +9,8 @@ const Home: NextPage = () => {
   <>
   <Head>
     <link rel="canonical" href="https://www.shintokukk.co.jp/" />
+    <link rel="preconnect" href="https://www.shintokukk.co.jp/"/>
+    <link rel="dns-prefetch" href="https://www.shintokukk.co.jp/"/>
     <title>進徳海運株式会社</title>
     <meta property="og:title" content="進徳海運株式会社" key="title" />
     <link rel="icon" href="/faviocon.ico" />
