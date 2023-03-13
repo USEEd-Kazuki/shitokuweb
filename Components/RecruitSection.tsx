@@ -4,11 +4,8 @@ import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 import 'swiper/css';
-import Head from 'next/head';
 
 const RecruitSection = () => {
-
-
     function SafeEmailLink() {
         const user = "toiawase"; 
         const domain = "shintokukk.co.jp"; 
