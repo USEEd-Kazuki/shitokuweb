@@ -1,16 +1,11 @@
 import React from 'react'
 import Image from 'next/image';
 import { motion } from 'framer-motion';
-import Head from 'next/head';
 
 
 const ServiceSection = () => {
   return (
     <>
-    <Head>
-    <title>進徳海運株式会社</title>
-            <meta property="og:title" content="進徳海運株式会社" key="title" />
-    </Head>
     <div className="serviceContaner">
         <div className='serviceContent'>
             <div className="serviceStoryContaner">

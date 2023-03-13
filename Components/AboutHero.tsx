@@ -5,7 +5,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, {Autoplay} from 'swiper';
 // Import Swiper styles
 import 'swiper/css';
-import Head from 'next/head';
 
 
 const AboutHero = () => {
@@ -30,10 +29,6 @@ const AboutHero = () => {
   
   return (
     <section>
-          <Head>
-            <title>進徳海運株式会社</title>
-            <meta property="og:title" content="進徳海運株式会社" key="title" />
-      </Head>
         <div className='heroContainer'>
           <div className="heroContent">
           <div className="Suboverlay"></div>

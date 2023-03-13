@@ -2,7 +2,6 @@ import React from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, {Autoplay} from 'swiper';
 
 import 'swiper/css';
 import Head from 'next/head';
@@ -22,10 +21,6 @@ const RecruitSection = () => {
 
   return (
    <>
-   <Head>
-   <title>進徳海運株式会社</title>
-            <meta property="og:title" content="進徳海運株式会社" key="title" />
-   </Head>
    {/*    
    <div className="recruitVideo">
         <div className="recruitOverlay"></div>
