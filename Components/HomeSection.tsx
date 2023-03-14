@@ -206,7 +206,7 @@ const HomeSection = () => {
                 </div>
                 <div
                 >
-                <video className='HeroMovie' src="/ShintokuHome.mp4" poster='/ShintokuHome.webp' playsInline autoPlay loop muted />
+                <video className='HeroMovie' src="/ShintokuHome.mp4" poster='/ShintokuHome.jpg' playsInline autoPlay loop muted />
                 </div>
             </div>
         </div>
