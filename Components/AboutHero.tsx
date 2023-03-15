@@ -8,7 +8,7 @@ import 'swiper/css';
 
 
 const AboutHero = () => {
-
+  
   SwiperCore.use([Autoplay])
 
   const svgVariants  = {
