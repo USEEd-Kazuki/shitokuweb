@@ -64,6 +64,13 @@ const Header: FC = (props) => {
             </a>
         </Link>
         </li>
+        <li className='navLink' >
+        <Link href='https://sgfm.jp/f/1d58f92089990783bb2afb94581cefb9' scroll={false}>
+            <a className='navLinkWord'>
+                お問い合わせ
+            </a>
+        </Link>
+        </li>
         </ul>
         </div>
     </div>

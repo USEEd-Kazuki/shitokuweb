@@ -25,10 +25,6 @@ const Footer = () => {
             <div className="footerTelTitle">TEL : </div>
             <div className="footerTelNumber">082-423-1958</div>
           </div>
-          <div className="footerMail">
-            <div className="footerMailTitle">Mail : </div>
-            <div className="footerMailNumber"><SafeEmailLink/></div>
-          </div>
           <div className="footerAddress">
             <div className="footerAddressTitle">ADDRESS : </div>
             <div className="footerAddressPostNumber">〒739-0024</div>

@@ -6,15 +6,6 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 
 const RecruitSection = () => {
-    function SafeEmailLink() {
-        const user = "toiawase"; 
-        const domain = "shintokukk.co.jp"; 
-        const mailto = "mailto:" + user + "@" + domain; 
-      
-        return (
-          <a className='blackMailNumber' href={mailto}>{user}@{domain}</a>
-        );
-      }
 
   return (
    <>
@@ -1085,14 +1076,12 @@ const RecruitSection = () => {
                                                                                viewport={{ once: false, amount: 0 }}
                     >
                         <h1 className='applyTitle'>応募方法</h1>
-                        <div className='applyDeatil'>履歴書（写真貼付・勤務開始可能日を明記）、職務経歴書を下記宛先に郵送又は、メールにてお送りください。（確認可能なメールアドレスを必ず記載してください）</div>
-                        <div className='applyDeatil1'>※お送りいただいた履歴書等の書類は返却いたしません。予めご了承ください。</div>
+                        <div className='applyDeatil'>当サイトのお問い合わせフォームよりご応募のご連絡をください。後ほど、担当者よりご連絡させていただきます。</div>
                         <div className='applyDeatil2'>※ご応募いただきました個人情報は、厳重にお取り扱いいたします。本採用以外の目的で使用することはございません。</div>
                         <h1 className='applyTitle1'>問い合わせ先</h1>
                         <div className='applyDeatil4'>進徳海運　株式会社</div>
                         <div className='applyDeatil5'>住所 : 〒739-0024 広島県東広島市 西条町御薗宇6200番地1</div>
                         <div className='applyDeatil6'>TEL : 082-423-1958</div>
-                        <div className='applyDeatil7'>Mail : <SafeEmailLink /></div>
                     </motion.div>
                 </div>
             </div>

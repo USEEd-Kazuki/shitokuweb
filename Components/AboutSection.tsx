@@ -404,62 +404,7 @@ const AboutSection = () => {
                                                                                viewport={{ once: false, amount: 0 }}
                         className='aboutBorderDetail'></motion.p>
                     </div>
-                    <div className="aboutDeatilName">
-                        <motion.h1 
-                                                                            variants={{
-                                                                                offscreen: { // 画面外の場合のスタイル
-                                                                                 y: 10,
-                                                                                opacity: 0,
-                                                                               },
-                                                                               onscreen: { // 画面内の場合のスタイル
-                                                                               y: 0,
-                                                                               opacity: 1,
-                                                                               transition: {
-                                                                               duration: 1,
-                                                                                },
-                                                                               },
-                                                                               }}
-                                                                               initial="offscreen" // 初期表示はoffscreen
-                                                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                                                               viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName1'>MAIL</motion.h1>
-                        <motion.p 
-                                                                            variants={{
-                                                                                offscreen: { // 画面外の場合のスタイル
-                                                                                 y: 10,
-                                                                                opacity: 0,
-                                                                               },
-                                                                               onscreen: { // 画面内の場合のスタイル
-                                                                               y: 0,
-                                                                               opacity: 1,
-                                                                               transition: {
-                                                                               duration: 1,
-                                                                                },
-                                                                               },
-                                                                               }}
-                                                                               initial="offscreen" // 初期表示はoffscreen
-                                                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                                                               viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'><SafeEmailLink/></motion.p>
-                        <motion.p 
-                                                                            variants={{
-                                                                                offscreen: { // 画面外の場合のスタイル
-                                                                                 y: 10,
-                                                                                opacity: 0,
-                                                                               },
-                                                                               onscreen: { // 画面内の場合のスタイル
-                                                                               y: 0,
-                                                                               opacity: 1,
-                                                                               transition: {
-                                                                               duration: 1,
-                                                                                },
-                                                                               },
-                                                                               }}
-                                                                               initial="offscreen" // 初期表示はoffscreen
-                                                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                                                               viewport={{ once: false, amount: 0 }}
-                        className='aboutBorderDetail'></motion.p>
-                    </div>
+
                     <div className="aboutDeatilName">
                         <motion.h1 
                                                                             variants={{
