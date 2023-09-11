@@ -1317,10 +1317,11 @@ to {
     font-size: 1.8rem;
   }
   .headerTitle{
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .navLink{
-    margin-right: 5rem;
+    font-size: 2rem;
+    margin-right: 3rem;
   }
   .navLinkWord{
     padding-bottom: 0.1rem;
