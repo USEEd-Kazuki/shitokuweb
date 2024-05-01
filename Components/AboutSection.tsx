@@ -609,7 +609,7 @@ const AboutSection = () => {
                                                                                initial="offscreen" // 初期表示はoffscreen
                                                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'>About 5,000,000.00 USD (2022年)</motion.p>
+                        className='aboutDeatilName3'>About 50,000,000.00 USD (2022年)</motion.p>
                         <motion.p 
                                                                             variants={{
                                                                                 offscreen: { // 画面外の場合のスタイル
