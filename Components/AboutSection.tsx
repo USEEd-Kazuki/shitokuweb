@@ -441,7 +441,7 @@ const AboutSection = () => {
                                                                                initial="offscreen" // 初期表示はoffscreen
                                                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'>商工組合中央金庫、広島銀行、福岡銀行、みずほ銀行、三井住友信託銀行、山口銀行（五十音順）</motion.p>
+                        className='aboutDeatilName3'>山陰合同銀行、商工組合中央金庫、中国銀行、広島銀行、福岡銀行、みずほ銀行、三井住友信託銀行、山口銀行（五十音順）</motion.p>
                         <motion.p 
                                                                             variants={{
                                                                                 offscreen: { // 画面外の場合のスタイル
@@ -591,62 +591,6 @@ const AboutSection = () => {
                                                                                initial="offscreen" // 初期表示はoffscreen
                                                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName1'>売上高</motion.h1>
-                        <motion.p 
-                                                                            variants={{
-                                                                                offscreen: { // 画面外の場合のスタイル
-                                                                                 y: 10,
-                                                                                opacity: 0,
-                                                                               },
-                                                                               onscreen: { // 画面内の場合のスタイル
-                                                                               y: 0,
-                                                                               opacity: 1,
-                                                                               transition: {
-                                                                               duration: 1,
-                                                                                },
-                                                                               },
-                                                                               }}
-                                                                               initial="offscreen" // 初期表示はoffscreen
-                                                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                                                               viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'>About 50,000,000.00 USD (2022年)</motion.p>
-                        <motion.p 
-                                                                            variants={{
-                                                                                offscreen: { // 画面外の場合のスタイル
-                                                                                 y: 10,
-                                                                                opacity: 0,
-                                                                               },
-                                                                               onscreen: { // 画面内の場合のスタイル
-                                                                               y: 0,
-                                                                               opacity: 1,
-                                                                               transition: {
-                                                                               duration: 1,
-                                                                                },
-                                                                               },
-                                                                               }}
-                                                                               initial="offscreen" // 初期表示はoffscreen
-                                                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                                                               viewport={{ once: false, amount: 0 }}
-                        className='aboutBorderDetail'></motion.p>
-                    </div>
-                    <div className="aboutDeatilName">
-                        <motion.h1 
-                                                                            variants={{
-                                                                                offscreen: { // 画面外の場合のスタイル
-                                                                                 y: 10,
-                                                                                opacity: 0,
-                                                                               },
-                                                                               onscreen: { // 画面内の場合のスタイル
-                                                                               y: 0,
-                                                                               opacity: 1,
-                                                                               transition: {
-                                                                               duration: 1,
-                                                                                },
-                                                                               },
-                                                                               }}
-                                                                               initial="offscreen" // 初期表示はoffscreen
-                                                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                                                               viewport={{ once: false, amount: 0 }}
                         className='aboutDeatilName1'>従業員数</motion.h1>
                         <motion.p 
                                                                             variants={{
@@ -665,7 +609,7 @@ const AboutSection = () => {
                                                                                initial="offscreen" // 初期表示はoffscreen
                                                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                viewport={{ once: false, amount: 0 }}
-                        className='aboutDeatilName3'>15人（2022年）</motion.p>
+                        className='aboutDeatilName3'>12人</motion.p>
                         <motion.p 
                                                                             variants={{
                                                                                 offscreen: { // 画面外の場合のスタイル
@@ -940,64 +884,6 @@ const AboutSection = () => {
                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                viewport={{ once: false, amount: 0 }}
                     className="aboutCompanyMapName">常務取締役 佐川真也</motion.div>
-                </div>
-                <div className="aboutCompanyMap3">
-                    <div className="aboutCompanyMapTitle">
-                        <motion.h1
-                                                variants={{
-                                                    offscreen: { // 画面外の場合のスタイル
-                                                     y: 10,
-                                                    opacity: 0,
-                                                   },
-                                                   onscreen: { // 画面内の場合のスタイル
-                                                   y: 0,
-                                                   opacity: 1,
-                                                   transition: {
-                                                   duration: 0.5,
-                                                    },
-                                                   },
-                                                   }}
-                                                   initial="offscreen" // 初期表示はoffscreen
-                                                   whileInView="onscreen" // 画面内に入ったらonscreen
-                                                   viewport={{ once: false, amount: 0 }}
-                        >営業・経営企画</motion.h1>
-                        <motion.p 
-                                                variants={{
-                                                    offscreen: { // 画面外の場合のスタイル
-                                                     y: 10,
-                                                    opacity: 0,
-                                                   },
-                                                   onscreen: { // 画面内の場合のスタイル
-                                                   y: 0,
-                                                   opacity: 1,
-                                                   transition: {
-                                                   duration: 0.5,
-                                                    },
-                                                   },
-                                                   }}
-                                                   initial="offscreen" // 初期表示はoffscreen
-                                                   whileInView="onscreen" // 画面内に入ったらonscreen
-                                                   viewport={{ once: false, amount: 0 }}
-                        className="aboutCompanyLine"></motion.p>
-                    </div>
-                    <motion.div 
-                                            variants={{
-                                                offscreen: { // 画面外の場合のスタイル
-                                                 y: 10,
-                                                opacity: 0,
-                                               },
-                                               onscreen: { // 画面内の場合のスタイル
-                                               y: 0,
-                                               opacity: 1,
-                                               transition: {
-                                               duration: 0.5,
-                                                },
-                                               },
-                                               }}
-                                               initial="offscreen" // 初期表示はoffscreen
-                                               whileInView="onscreen" // 画面内に入ったらonscreen
-                                               viewport={{ once: false, amount: 0 }}
-                    className="aboutCompanyMapName">専務取締役 柏原智</motion.div>
                 </div>
                 <div className="aboutCompanyMap4">
                     <div className="aboutCompanyMapTitle">
