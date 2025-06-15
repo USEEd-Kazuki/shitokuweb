@@ -612,7 +612,7 @@ const RecruitSection = () => {
                                                            initial="offscreen" // 初期表示はoffscreen
                                                            whileInView="onscreen" // 画面内に入ったらonscreen
                                                            viewport={{ once: false, amount: 0 }}
-                                className="recruitdeatilSubWord3">年間休日数 / 120日 </motion.p>
+                                className="recruitdeatilSubWord3">年間休日数 / 125日 </motion.p>
                             </div>
                     </div>
                         </div>
@@ -1050,7 +1050,7 @@ const RecruitSection = () => {
                                                            initial="offscreen" // 初期表示はoffscreen
                                                            whileInView="onscreen" // 画面内に入ったらonscreen
                                                            viewport={{ once: false, amount: 0 }}
-                                className="recruitdeatilSubWord3">年間休日数 / 120日 </motion.p>
+                                className="recruitdeatilSubWord3">年間休日数 / 125日 </motion.p>
                             </div>
                     </div>
                         </div>

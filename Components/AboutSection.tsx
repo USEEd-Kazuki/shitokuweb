@@ -883,7 +883,7 @@ const AboutSection = () => {
                                                initial="offscreen" // 初期表示はoffscreen
                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                viewport={{ once: false, amount: 0 }}
-                    className="aboutCompanyMapName">常務取締役 佐川真也</motion.div>
+                    className="aboutCompanyMapName">CFO 取締役副社長 佐川真也</motion.div>
                 </div>
                 <div className="aboutCompanyMap4">
                     <div className="aboutCompanyMapTitle">

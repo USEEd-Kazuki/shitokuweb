@@ -77,7 +77,7 @@ const ServiceSection = () => {
                                                                                                    initial="offscreen" // 初期表示はoffscreen
                                                                                                    whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                                    viewport={{ once: false, amount: 0 }}
-                                            className='serviceHistoryHead'>1959年</motion.td>
+                                            className='serviceHistoryHead'>1958年</motion.td>
                                         </tr>
                                         <tr>
                                             <motion.td 
@@ -512,6 +512,57 @@ const ServiceSection = () => {
                                             現・代表取締役社長が就任
                                             </motion.td>
                                         </tr>
+                                                                                <tr>
+                                            <td className='serviceHistoryHeadEmpty'>X</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='serviceHistoryBodyEmpty'>
+                                                X
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <motion.td 
+                                                                                                variants={{
+                                                                                                    offscreen: { // 画面外の場合のスタイル
+                                                                                                     x: -10,
+                                                                                                    opacity: 0,
+                                                                                                   },
+                                                                                                   onscreen: { // 画面内の場合のスタイル
+                                                                                                   x: 0,
+                                                                                                   opacity: 1,
+                                                                                                   transition: {
+                                                                                                   duration: 1,
+                                                                                                    },
+                                                                                                   },
+                                                                                                   }}
+                                                                                                   initial="offscreen" // 初期表示はoffscreen
+                                                                                                   whileInView="onscreen" // 画面内に入ったらonscreen
+                                                                                                   viewport={{ once: false, amount: 0 }}
+                                            className='serviceHistoryHead'>2023年</motion.td>
+                                        </tr>
+                                        <tr>
+                                            <motion.td 
+                                                                                                variants={{
+                                                                                                    offscreen: { // 画面外の場合のスタイル
+                                                                                                     x: -10,
+                                                                                                    opacity: 0,
+                                                                                                   },
+                                                                                                   onscreen: { // 画面内の場合のスタイル
+                                                                                                   x: 0,
+                                                                                                   opacity: 1,
+                                                                                                   transition: {
+                                                                                                   duration: 1,
+                                                                                                   delay:0.1
+                                                                                                    },
+                                                                                                   },
+                                                                                                   }}
+                                                                                                   initial="offscreen" // 初期表示はoffscreen
+                                                                                                   whileInView="onscreen" // 画面内に入ったらonscreen
+                                                                                                   viewport={{ once: false, amount: 0 }}
+                                            className='serviceHistoryBody'>
+                                            半世紀ぶりの内航船<br/>"しらなみ"(8,628DWT)建造
+                                            </motion.td>
+                                        </tr>
                                     </tbody>
                                 </table>
                             </div>
@@ -926,6 +977,7 @@ const ServiceSection = () => {
                                             SHINTOKU MARINE CO., LTD.全株を売却
                                             </motion.td>
                                         </tr>
+
                                         <tr>
                                             <td className='serviceHistoryHeadEmpty'>X</td>
                                         </tr>
@@ -952,7 +1004,7 @@ const ServiceSection = () => {
                                                                                                    initial="offscreen" // 初期表示はoffscreen
                                                                                                    whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                                    viewport={{ once: false, amount: 0 }}
-                                            className='serviceHistoryHead'>2019年</motion.td>
+                                            className='serviceHistoryHead'>2018年</motion.td>
                                         </tr>
                                         <tr>
                                             <motion.td 
@@ -974,7 +1026,62 @@ const ServiceSection = () => {
                                                                                                    whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                                    viewport={{ once: false, amount: 0 }}
                                             className='serviceHistoryBody'>
-                                            定期用船5隻、裸傭船6隻(合計11隻)を所有
+                                            Bareboat Charter船 ポストパナックス<br/>
+                                            "PACIFIC OPAL"(97,570DWT)建造
+                                            </motion.td>
+                                        </tr>
+                                        
+                                        <tr>
+                                            <td className='serviceHistoryHeadEmpty'>X</td>
+                                        </tr>
+                                        <tr>
+                                            <td className='serviceHistoryBodyEmpty'>
+                                                X
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <motion.td 
+                                                                                                variants={{
+                                                                                                    offscreen: { // 画面外の場合のスタイル
+                                                                                                     x: 10,
+                                                                                                    opacity: 0,
+                                                                                                   },
+                                                                                                   onscreen: { // 画面内の場合のスタイル
+                                                                                                   x: 0,
+                                                                                                   opacity: 1,
+                                                                                                   transition: {
+                                                                                                   duration: 1,
+                                                                                                    },
+                                                                                                   },
+                                                                                                   }}
+                                                                                                   initial="offscreen" // 初期表示はoffscreen
+                                                                                                   whileInView="onscreen" // 画面内に入ったらonscreen
+                                                                                                   viewport={{ once: false, amount: 0 }}
+                                            className='serviceHistoryHead'>2025年</motion.td>
+                                        </tr>
+                                        <tr>
+                                            <motion.td 
+                                                                                                variants={{
+                                                                                                    offscreen: { // 画面外の場合のスタイル
+                                                                                                     x: 10,
+                                                                                                    opacity: 0,
+                                                                                                   },
+                                                                                                   onscreen: { // 画面内の場合のスタイル
+                                                                                                   x: 0,
+                                                                                                   opacity: 1,
+                                                                                                   transition: {
+                                                                                                   duration: 1,
+                                                                                                   delay:0.1
+                                                                                                    },
+                                                                                                   },
+                                                                                                   }}
+                                                                                                   initial="offscreen" // 初期表示はoffscreen
+                                                                                                   whileInView="onscreen" // 画面内に入ったらonscreen
+                                                                                                   viewport={{ once: false, amount: 0 }}
+                                            className='serviceHistoryBody'>
+                                            定期用船6隻、裸傭船8隻(合計14隻)を所有
+                                            <br />
+                                            (新たに5隻取得予定あり)
                                             </motion.td>
                                         </tr>
                                         <tr>
@@ -1300,6 +1407,89 @@ const ServiceSection = () => {
                                            whileInView="onscreen" // 画面内に入ったらonscreen
                                            viewport={{ once: false, amount: 0 }}
                 className="serviceShintokuHelloSubWord2"> ケミカル船は、危険物質でもある化学製品を運搬するため高度なレベルの運航管理が求められますが、当社としては60年超の経験とノウハウをもって上記の様な需要が絶えることのが無いケミカルを運ぶ船舶に注力しております。</motion.p>
+            </div>
+                        <div >
+                <motion.h1 
+                                        variants={{
+                                            offscreen: { // 画面外の場合のスタイル
+                                             x: -10,
+                                            opacity: 0,
+                                           },
+                                           onscreen: { // 画面内の場合のスタイル
+                                           x: 0,
+                                           opacity: 1,
+                                           transition: {
+                                           duration: 1,
+                                            },
+                                           },
+                                           }}
+                                           initial="offscreen" // 初期表示はoffscreen
+                                           whileInView="onscreen" // 画面内に入ったらonscreen
+                                           viewport={{ once: false, amount: 0 }}
+                className="serviceShintokuHelloSubTitle">お知らせ</motion.h1>
+                <motion.p 
+                                        variants={{
+                                            offscreen: { // 画面外の場合のスタイル
+                                             x: -10,
+                                            opacity: 0,
+                                           },
+                                           onscreen: { // 画面内の場合のスタイル
+                                           x: 0,
+                                           opacity: 1,
+                                           transition: {
+                                           duration: 1,
+                                            },
+                                           },
+                                           }}
+                                           initial="offscreen" // 初期表示はoffscreen
+                                           whileInView="onscreen" // 画面内に入ったらonscreen
+                                           viewport={{ once: false, amount: 0 }}
+                className="serviceWhy"></motion.p>
+            </div>
+            <div className="serviceShintokuHelloSubWord">
+                <motion.p 
+                                        variants={{
+                                            offscreen: { // 画面外の場合のスタイル
+                                             x: -10,
+                                            opacity: 0,
+                                           },
+                                           onscreen: { // 画面内の場合のスタイル
+                                           x: 0,
+                                           opacity: 1,
+                                           transition: {
+                                           duration: 1,
+                                            },
+                                           },
+                                           }}
+                                           initial="offscreen" // 初期表示はoffscreen
+                                           whileInView="onscreen" // 画面内に入ったらonscreen
+                                           viewport={{ once: false, amount: 0 }}
+                className="serviceShintokuHelloSubWord1">日本海事新聞社様の「インタビュー 船主の成長戦略」にて掲載させていただきました。</motion.p>
+                <motion.p 
+                                        variants={{
+                                            offscreen: { // 画面外の場合のスタイル
+                                             x: -10,
+                                            opacity: 0,
+                                           },
+                                           onscreen: { // 画面内の場合のスタイル
+                                           x: 0,
+                                           opacity: 1,
+                                           transition: {
+                                           duration: 1,
+                                            },
+                                           },
+                                           }}
+                                           initial="offscreen" // 初期表示はoffscreen
+                                           whileInView="onscreen" // 画面内に入ったらonscreen
+                                           viewport={{ once: false, amount: 0 }}
+                className="serviceShintokuHelloSubWord2">URL : <a
+      href="https://www.jmd.co.jp/article.php?no=2"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ color: '#000000', textDecoration: 'underline' }}
+    >
+      https://www.jmd.co.jp/article.php?no=2
+    </a></motion.p>
             </div>
                     </div>
                     </div>
