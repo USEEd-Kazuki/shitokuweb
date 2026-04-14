@@ -1057,7 +1057,7 @@ const ServiceSection = () => {
                                                                                                    initial="offscreen" // 初期表示はoffscreen
                                                                                                    whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                                    viewport={{ once: false, amount: 0 }}
-                                            className='serviceHistoryHead'>2025年</motion.td>
+                                            className='serviceHistoryHead'>2026年</motion.td>
                                         </tr>
                                         <tr>
                                             <motion.td 
@@ -1079,9 +1079,7 @@ const ServiceSection = () => {
                                                                                                    whileInView="onscreen" // 画面内に入ったらonscreen
                                                                                                    viewport={{ once: false, amount: 0 }}
                                             className='serviceHistoryBody'>
-                                            定期用船6隻、裸傭船8隻(合計14隻)を所有
-                                            <br />
-                                            (新たに5隻取得予定あり)
+                                            合計14隻を所有
                                             </motion.td>
                                         </tr>
                                         <tr>
@@ -1272,7 +1270,6 @@ const ServiceSection = () => {
                                                whileInView="onscreen" // 画面内に入ったらonscreen
                                                viewport={{ once: false, amount: 0 }}
                     className="serviceHelloPohoto">
-                    <Image src={'/shintokuHello.JPG'} alt={'ShintokuHello'} width={1200} height={800}></Image>
                     </motion.div>
                     <div >
                 <motion.h1 
